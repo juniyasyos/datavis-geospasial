@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7208273f1f19648c6e811f942a627197 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7208273f1f19648c6e811f942a627197" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7208273f1f19648c6e811f942a627197 = L.map(
+                "map_7208273f1f19648c6e811f942a627197",
+                {
+                    center: [-8.19028, 113.65706],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3169520fecc5d08f16c1ce4731c260ec = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3169520fecc5d08f16c1ce4731c260ec.addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+            var circle_marker_aad298e6617b3cf985f50797c7b6080f = L.circleMarker(
+                [-8.165, 113.6995],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_7da7d4f6aca1cfef58cceba7301ea33f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8677fa09a035bfc6425c0706244e4724 = $(`<div id="html_8677fa09a035bfc6425c0706244e4724" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #3498db;'>🎓 SMAN 1 Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Pendidikan<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 4.5/5.0<br>         <b>👥 Kapasitas:</b> 1,200 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Sekolah menengah favorit di pusat kota</i>     </div>     </div>`)[0];
+                popup_7da7d4f6aca1cfef58cceba7301ea33f.setContent(html_8677fa09a035bfc6425c0706244e4724);
+            
+        
+
+        circle_marker_aad298e6617b3cf985f50797c7b6080f.bindPopup(popup_7da7d4f6aca1cfef58cceba7301ea33f)
+        ;
+
+        
+    
+    
+            var circle_marker_37737e57c52e803f96b7cb8c8af91cff = L.circleMarker(
+                [-8.1734, 113.6801],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_2cd241ff12b642d77189374e7d58929d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_16d2a2bc404d13199cedeb94582ef4b7 = $(`<div id="html_16d2a2bc404d13199cedeb94582ef4b7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #e74c3c;'>🏥 RSUD dr. Soebandi</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Kesehatan<br>         <b>📍 Kecamatan:</b> Patrang<br>         <b>⭐ Rating:</b> 4.2/5.0<br>         <b>👥 Kapasitas:</b> 450 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Rumah sakit rujukan utama Jember</i>     </div>     </div>`)[0];
+                popup_2cd241ff12b642d77189374e7d58929d.setContent(html_16d2a2bc404d13199cedeb94582ef4b7);
+            
+        
+
+        circle_marker_37737e57c52e803f96b7cb8c8af91cff.bindPopup(popup_2cd241ff12b642d77189374e7d58929d)
+        ;
+
+        
+    
+    
+            var circle_marker_d8c3c325fa7dfe32d7e55c592ca39449 = L.circleMarker(
+                [-8.1652, 113.722],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.2, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_60abccc2d8a60d120e30cabda8412fa5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d17e318af700a4f253cbec8374b69bb8 = $(`<div id="html_d17e318af700a4f253cbec8374b69bb8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #3498db;'>🎓 Universitas Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Pendidikan<br>         <b>📍 Kecamatan:</b> Sumbersari<br>         <b>⭐ Rating:</b> 4.6/5.0<br>         <b>👥 Kapasitas:</b> 35,000 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Kampus universitas negeri terbesar</i>     </div>     </div>`)[0];
+                popup_60abccc2d8a60d120e30cabda8412fa5.setContent(html_d17e318af700a4f253cbec8374b69bb8);
+            
+        
+
+        circle_marker_d8c3c325fa7dfe32d7e55c592ca39449.bindPopup(popup_60abccc2d8a60d120e30cabda8412fa5)
+        ;
+
+        
+    
+    
+            var circle_marker_b88f2224a71ff4e24766ec72fa7d8712 = L.circleMarker(
+                [-8.1689, 113.6945],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_19683ea5008a6640fba5088e994a4c9d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_41f1ea29b95e4e11e93bc0b9e0a16536 = $(`<div id="html_41f1ea29b95e4e11e93bc0b9e0a16536" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #f39c12;'>🏪 Pasar Tanjung</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ekonomi<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 4.0/5.0<br>         <b>👥 Kapasitas:</b> 500 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pasar tradisional pusat kota</i>     </div>     </div>`)[0];
+                popup_19683ea5008a6640fba5088e994a4c9d.setContent(html_41f1ea29b95e4e11e93bc0b9e0a16536);
+            
+        
+
+        circle_marker_b88f2224a71ff4e24766ec72fa7d8712.bindPopup(popup_19683ea5008a6640fba5088e994a4c9d)
+        ;
+
+        
+    
+    
+            var circle_marker_9281e17a36ebe4209bb6e61732a7624f = L.circleMarker(
+                [-8.2789, 113.8689],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.4, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_17caf38c225eb83887979e019fe27819 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b0bd439b58f3f4949774bcf42f849d31 = $(`<div id="html_b0bd439b58f3f4949774bcf42f849d31" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #2ecc71;'>🏖️ Papuma Beach</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Wisata<br>         <b>📍 Kecamatan:</b> Wuluhan<br>         <b>⭐ Rating:</b> 4.7/5.0<br>         <b>👥 Kapasitas:</b> 1,000 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pantai pasir putih dengan tebing karang</i>     </div>     </div>`)[0];
+                popup_17caf38c225eb83887979e019fe27819.setContent(html_b0bd439b58f3f4949774bcf42f849d31);
+            
+        
+
+        circle_marker_9281e17a36ebe4209bb6e61732a7624f.bindPopup(popup_17caf38c225eb83887979e019fe27819)
+        ;
+
+        
+    
+    
+            var circle_marker_4644c9689b2cfc5350e7d11a883b55ca = L.circleMarker(
+                [-8.2145, 113.3789],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.8, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_ae44212b7b4f13eeb7e85fedb8a370a8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b6f0e5eaf3b23de66ff78e789915d38e = $(`<div id="html_b6f0e5eaf3b23de66ff78e789915d38e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #2ecc71;'>🏖️ Air Terjun Tancak</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Wisata<br>         <b>📍 Kecamatan:</b> Panti<br>         <b>⭐ Rating:</b> 4.4/5.0<br>         <b>👥 Kapasitas:</b> 300 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Air terjun dengan kolam alami</i>     </div>     </div>`)[0];
+                popup_ae44212b7b4f13eeb7e85fedb8a370a8.setContent(html_b6f0e5eaf3b23de66ff78e789915d38e);
+            
+        
+
+        circle_marker_4644c9689b2cfc5350e7d11a883b55ca.bindPopup(popup_ae44212b7b4f13eeb7e85fedb8a370a8)
+        ;
+
+        
+    
+    
+            var circle_marker_494707bda98c5762c972a7ed9af04385 = L.circleMarker(
+                [-8.1705, 113.7034],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.6, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_b51a5ae5cd0460f286016d5e0050f33c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b178891cb9c0e75156e7d07b5312dfdc = $(`<div id="html_b178891cb9c0e75156e7d07b5312dfdc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #3498db;'>🎓 SMP Negeri 1 Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Pendidikan<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 4.3/5.0<br>         <b>👥 Kapasitas:</b> 900 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Sekolah menengah pertama favorit</i>     </div>     </div>`)[0];
+                popup_b51a5ae5cd0460f286016d5e0050f33c.setContent(html_b178891cb9c0e75156e7d07b5312dfdc);
+            
+        
+
+        circle_marker_494707bda98c5762c972a7ed9af04385.bindPopup(popup_b51a5ae5cd0460f286016d5e0050f33c)
+        ;
+
+        
+    
+    
+            var circle_marker_e2fc79f6a6b92f75fd30487589cc6e35 = L.circleMarker(
+                [-8.2911, 113.9081],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.8, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_f011cce6cb34b4b95835e255e8cfc424 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c7b7f10bd2b40127ef5a303663266a85 = $(`<div id="html_c7b7f10bd2b40127ef5a303663266a85" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #e74c3c;'>🏥 Puskesmas Balung</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Kesehatan<br>         <b>📍 Kecamatan:</b> Balung<br>         <b>⭐ Rating:</b> 3.9/5.0<br>         <b>👥 Kapasitas:</b> 150 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pusat kesehatan masyarakat</i>     </div>     </div>`)[0];
+                popup_f011cce6cb34b4b95835e255e8cfc424.setContent(html_c7b7f10bd2b40127ef5a303663266a85);
+            
+        
+
+        circle_marker_e2fc79f6a6b92f75fd30487589cc6e35.bindPopup(popup_f011cce6cb34b4b95835e255e8cfc424)
+        ;
+
+        
+    
+    
+            var circle_marker_1b623a4fed071a54b05625eb21eb9534 = L.circleMarker(
+                [-8.1672, 113.6978],
+                {"bubblingMouseEvents": true, "color": "#9b59b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.2, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_cc38a11b17577ff5bcd9d0e3c94a4fee = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_979982f2892c239076ee0f2b1fd39cb6 = $(`<div id="html_979982f2892c239076ee0f2b1fd39cb6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #9b59b6;'>🏛️ Alun-alun Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ruang_Publik<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 4.1/5.0<br>         <b>👥 Kapasitas:</b> 2,000 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Ruang terbuka publik pusat kota</i>     </div>     </div>`)[0];
+                popup_cc38a11b17577ff5bcd9d0e3c94a4fee.setContent(html_979982f2892c239076ee0f2b1fd39cb6);
+            
+        
+
+        circle_marker_1b623a4fed071a54b05625eb21eb9534.bindPopup(popup_cc38a11b17577ff5bcd9d0e3c94a4fee)
+        ;
+
+        
+    
+    
+            var circle_marker_3a59d9218ff10c604ec9c2101a3c4510 = L.circleMarker(
+                [-8.1445, 113.6208],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_742a5d2cee8b21b36790a9ab32634a0d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9ea601e5aa000148d97e5051492595d8 = $(`<div id="html_9ea601e5aa000148d97e5051492595d8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #3498db;'>🎓 Kampung Inggris</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Pendidikan<br>         <b>📍 Kecamatan:</b> Rambipuji<br>         <b>⭐ Rating:</b> 4.5/5.0<br>         <b>👥 Kapasitas:</b> 500 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Lembaga kursus bahasa Inggris</i>     </div>     </div>`)[0];
+                popup_742a5d2cee8b21b36790a9ab32634a0d.setContent(html_9ea601e5aa000148d97e5051492595d8);
+            
+        
+
+        circle_marker_3a59d9218ff10c604ec9c2101a3c4510.bindPopup(popup_742a5d2cee8b21b36790a9ab32634a0d)
+        ;
+
+        
+    
+    
+            var circle_marker_7d1b68d9f9b242bd8f4e817c12c5d7eb = L.circleMarker(
+                [-8.1633, 113.4521],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.6, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_c6705d419095458837a953441b4648f4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_80d4ed0f70fdcc950bbe89696126aabd = $(`<div id="html_80d4ed0f70fdcc950bbe89696126aabd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #f39c12;'>🏪 Pasar Tanggul</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ekonomi<br>         <b>📍 Kecamatan:</b> Tanggul<br>         <b>⭐ Rating:</b> 3.8/5.0<br>         <b>👥 Kapasitas:</b> 400 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pasar tradisional wilayah barat</i>     </div>     </div>`)[0];
+                popup_c6705d419095458837a953441b4648f4.setContent(html_80d4ed0f70fdcc950bbe89696126aabd);
+            
+        
+
+        circle_marker_7d1b68d9f9b242bd8f4e817c12c5d7eb.bindPopup(popup_c6705d419095458837a953441b4648f4)
+        ;
+
+        
+    
+    
+            var circle_marker_a4c476fe2261249bf51601473da2c380 = L.circleMarker(
+                [-8.3856, 113.6234],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.6, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_ff6d0bb5b34f369ed3273d12929c9c00 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1a044c29a392ee7f1a3800ed5ecfed54 = $(`<div id="html_1a044c29a392ee7f1a3800ed5ecfed54" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #2ecc71;'>🏖️ Pantai Payangan</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Wisata<br>         <b>📍 Kecamatan:</b> Ambulu<br>         <b>⭐ Rating:</b> 4.3/5.0<br>         <b>👥 Kapasitas:</b> 800 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pantai dengan pemandangan sunset</i>     </div>     </div>`)[0];
+                popup_ff6d0bb5b34f369ed3273d12929c9c00.setContent(html_1a044c29a392ee7f1a3800ed5ecfed54);
+            
+        
+
+        circle_marker_a4c476fe2261249bf51601473da2c380.bindPopup(popup_ff6d0bb5b34f369ed3273d12929c9c00)
+        ;
+
+        
+    
+    
+            var circle_marker_ffa77d303f1993ae948c6291cbd5fcbc = L.circleMarker(
+                [-8.1589, 113.7156],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.2, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_262b2fe0755c0a3aebd75b230be4d9c0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a9a94f328e5a17231abe26c28ac9ca4f = $(`<div id="html_a9a94f328e5a17231abe26c28ac9ca4f" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #e74c3c;'>🏥 RS Citra Husada</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Kesehatan<br>         <b>📍 Kecamatan:</b> Sumbersari<br>         <b>⭐ Rating:</b> 4.1/5.0<br>         <b>👥 Kapasitas:</b> 250 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Rumah sakit swasta modern</i>     </div>     </div>`)[0];
+                popup_262b2fe0755c0a3aebd75b230be4d9c0.setContent(html_a9a94f328e5a17231abe26c28ac9ca4f);
+            
+        
+
+        circle_marker_ffa77d303f1993ae948c6291cbd5fcbc.bindPopup(popup_262b2fe0755c0a3aebd75b230be4d9c0)
+        ;
+
+        
+    
+    
+            var circle_marker_09ff51b3a0e280478a551590cad5f758 = L.circleMarker(
+                [-8.0789, 113.5445],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_2368719151801f219b9c0b704ce23af9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69927fe7bc71367554f957035181b445 = $(`<div id="html_69927fe7bc71367554f957035181b445" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #f39c12;'>🏪 Perkebunan Kopi</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ekonomi<br>         <b>📍 Kecamatan:</b> Silo<br>         <b>⭐ Rating:</b> 4.2/5.0<br>         <b>👥 Kapasitas:</b> 200 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Agrowisata perkebunan kopi</i>     </div>     </div>`)[0];
+                popup_2368719151801f219b9c0b704ce23af9.setContent(html_69927fe7bc71367554f957035181b445);
+            
+        
+
+        circle_marker_09ff51b3a0e280478a551590cad5f758.bindPopup(popup_2368719151801f219b9c0b704ce23af9)
+        ;
+
+        
+    
+    
+            var circle_marker_68f5983cb264bc27c5b2bd12127bcc54 = L.circleMarker(
+                [-8.1822, 113.6634],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_e5bb9c13cc16748ad30cb63818f89f26 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3f4e4f6fcb88619f3a3ba3153653ec37 = $(`<div id="html_3f4e4f6fcb88619f3a3ba3153653ec37" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #2ecc71;'>🏖️ Taman Botani</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Wisata<br>         <b>📍 Kecamatan:</b> Patrang<br>         <b>⭐ Rating:</b> 4.0/5.0<br>         <b>👥 Kapasitas:</b> 600 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Taman dengan koleksi flora langka</i>     </div>     </div>`)[0];
+                popup_e5bb9c13cc16748ad30cb63818f89f26.setContent(html_3f4e4f6fcb88619f3a3ba3153653ec37);
+            
+        
+
+        circle_marker_68f5983cb264bc27c5b2bd12127bcc54.bindPopup(popup_e5bb9c13cc16748ad30cb63818f89f26)
+        ;
+
+        
+    
+    
+            var circle_marker_6e35fec106a475071b4ba82ab2b56647 = L.circleMarker(
+                [-8.1545, 113.7089],
+                {"bubblingMouseEvents": true, "color": "#9b59b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9b59b6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.4, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_dd6f70da9736f4a5a6bf9c0b63a3ad2c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_edbc30efab92769ffa3c096792768208 = $(`<div id="html_edbc30efab92769ffa3c096792768208" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #9b59b6;'>🏛️ Stadion Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ruang_Publik<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 4.2/5.0<br>         <b>👥 Kapasitas:</b> 15,000 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Stadion sepak bola kabupaten</i>     </div>     </div>`)[0];
+                popup_dd6f70da9736f4a5a6bf9c0b63a3ad2c.setContent(html_edbc30efab92769ffa3c096792768208);
+            
+        
+
+        circle_marker_6e35fec106a475071b4ba82ab2b56647.bindPopup(popup_dd6f70da9736f4a5a6bf9c0b63a3ad2c)
+        ;
+
+        
+    
+    
+            var circle_marker_c7754bb802048112ab79911c8c643dc5 = L.circleMarker(
+                [-8.1593, 113.7213],
+                {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.8, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_ea4619de4db611de59735f6f0ec877fb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_cc6e44d0847f48eb9da457dd00af69bc = $(`<div id="html_cc6e44d0847f48eb9da457dd00af69bc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #3498db;'>🎓 SMKN 1 Jember</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Pendidikan<br>         <b>📍 Kecamatan:</b> Sumbersari<br>         <b>⭐ Rating:</b> 4.4/5.0<br>         <b>👥 Kapasitas:</b> 1,500 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Sekolah kejuruan teknik</i>     </div>     </div>`)[0];
+                popup_ea4619de4db611de59735f6f0ec877fb.setContent(html_cc6e44d0847f48eb9da457dd00af69bc);
+            
+        
+
+        circle_marker_c7754bb802048112ab79911c8c643dc5.bindPopup(popup_ea4619de4db611de59735f6f0ec877fb)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd8973209bb2efba1ebccb127142325 = L.circleMarker(
+                [-8.2847, 113.3679],
+                {"bubblingMouseEvents": true, "color": "#f39c12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.4, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_46cfd62438ea3c0293355de9115527a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3d795d90a91a2753d059fecbd1604825 = $(`<div id="html_3d795d90a91a2753d059fecbd1604825" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #f39c12;'>🏪 Pasar Kencong</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Ekonomi<br>         <b>📍 Kecamatan:</b> Kencong<br>         <b>⭐ Rating:</b> 3.7/5.0<br>         <b>👥 Kapasitas:</b> 350 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Pasar tradisional wilayah selatan</i>     </div>     </div>`)[0];
+                popup_46cfd62438ea3c0293355de9115527a3.setContent(html_3d795d90a91a2753d059fecbd1604825);
+            
+        
+
+        circle_marker_fcd8973209bb2efba1ebccb127142325.bindPopup(popup_46cfd62438ea3c0293355de9115527a3)
+        ;
+
+        
+    
+    
+            var circle_marker_f423f50ec5ecbfa275d7ade3f50482a2 = L.circleMarker(
+                [-8.1234, 113.6789],
+                {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.2, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_92599dff042f90e2b2d3421b478b4c80 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b3be87d6f3abc9d1a1c2739007187aa4 = $(`<div id="html_b3be87d6f3abc9d1a1c2739007187aa4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #2ecc71;'>🏖️ Waduk Sempor</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Wisata<br>         <b>📍 Kecamatan:</b> Sukorambi<br>         <b>⭐ Rating:</b> 4.1/5.0<br>         <b>👥 Kapasitas:</b> 500 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Waduk untuk pemancingan</i>     </div>     </div>`)[0];
+                popup_92599dff042f90e2b2d3421b478b4c80.setContent(html_b3be87d6f3abc9d1a1c2739007187aa4);
+            
+        
+
+        circle_marker_f423f50ec5ecbfa275d7ade3f50482a2.bindPopup(popup_92599dff042f90e2b2d3421b478b4c80)
+        ;
+
+        
+    
+    
+            var circle_marker_e0fa38c20353b9188d48cbd65a922892 = L.circleMarker(
+                [-8.1756, 113.6912],
+                {"bubblingMouseEvents": true, "color": "#34495e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#34495e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.2, "stroke": true, "weight": 2}
+            ).addTo(map_7208273f1f19648c6e811f942a627197);
+        
+    
+        var popup_41735531c946b3a48b959e8bf392cc59 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3077eb6c4dedd103a30c6ba377eabeac = $(`<div id="html_3077eb6c4dedd103a30c6ba377eabeac" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h4 style='margin-bottom: 5px; color: #34495e;'>🚌 Terminal Tawang Alun</h4>         <hr style='margin: 5px 0;'>         <b>📂 Kategori:</b> Transportasi<br>         <b>📍 Kecamatan:</b> Kaliwates<br>         <b>⭐ Rating:</b> 3.6/5.0<br>         <b>👥 Kapasitas:</b> 3,000 orang<br>         <br>         <i style='color: #7f8c8d; font-size: 11px;'>Terminal bus antar kota</i>     </div>     </div>`)[0];
+                popup_41735531c946b3a48b959e8bf392cc59.setContent(html_3077eb6c4dedd103a30c6ba377eabeac);
+            
+        
+
+        circle_marker_e0fa38c20353b9188d48cbd65a922892.bindPopup(popup_41735531c946b3a48b959e8bf392cc59)
+        ;
+
+        
+    
+</script>
+</html>

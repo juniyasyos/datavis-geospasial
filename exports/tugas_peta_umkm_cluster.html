@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_474778a99c507195728397e15305ec40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+     top: 10px; left: 50px; width: 400px; height: 60px; 
+     background-color: white; border:2px solid grey; z-index:9999; 
+     padding: 10px; border-radius: 5px; box-shadow: 2px 2px 6px rgba(0,0,0,0.3);">
+     <h4 style="margin: 0; padding: 0;">📍 Peta Persebaran UMKM Jawa Timur</h4>
+     <p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">
+         Klik marker untuk detail | Zoom untuk lihat cluster
+     </p>
+</div>
+    
+            <div class="folium-map" id="map_474778a99c507195728397e15305ec40" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_474778a99c507195728397e15305ec40 = L.map(
+                "map_474778a99c507195728397e15305ec40",
+                {
+                    center: [-8.188726666666668, 113.64984000000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2dfbefe89053b39ec64b33cd2b2f3cf6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2dfbefe89053b39ec64b33cd2b2f3cf6.addTo(map_474778a99c507195728397e15305ec40);
+        
+    
+            var marker_cluster_9af380146a0b7136d6e9767da275ef20 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6932bb09d5b23223fae82c3bbe3a2cf6 = L.marker(
+                [-8.1689, 113.7005],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_3887a16deeebd5e29225bbe05ebb6090 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c237f9355bcc5c80e7d1b588998bd02c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae9890801367776bba896a10bcb8d243 = $(`<div id="html_ae9890801367776bba896a10bcb8d243" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: red; margin-bottom: 10px;'>             🍽️ Warung Makan Bu Yani         </h3>         <hr style='margin: 5px 0; border-color: red;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Kaliwates</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Makanan</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     82/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_c237f9355bcc5c80e7d1b588998bd02c.setContent(html_ae9890801367776bba896a10bcb8d243);
+            
+        
+
+        marker_6932bb09d5b23223fae82c3bbe3a2cf6.bindPopup(popup_c237f9355bcc5c80e7d1b588998bd02c)
+        ;
+
+        
+    
+    
+                marker_6932bb09d5b23223fae82c3bbe3a2cf6.setIcon(icon_3887a16deeebd5e29225bbe05ebb6090);
+            
+    
+            var marker_5a09d8bddc76c4d7c88c251e49b51d3e = L.marker(
+                [-8.1593, 113.7213],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_e2d135cce4a79d2da6d9caec392fe673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f25fcd381f0e9d5fb005e3eeda9da91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19ab4c9f255000b6b386af2dae164abf = $(`<div id="html_19ab4c9f255000b6b386af2dae164abf" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: purple; margin-bottom: 10px;'>             🎂 Toko Kue Sukses         </h3>         <hr style='margin: 5px 0; border-color: purple;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Sumbersari</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Kue</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     88/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_4f25fcd381f0e9d5fb005e3eeda9da91.setContent(html_19ab4c9f255000b6b386af2dae164abf);
+            
+        
+
+        marker_5a09d8bddc76c4d7c88c251e49b51d3e.bindPopup(popup_4f25fcd381f0e9d5fb005e3eeda9da91)
+        ;
+
+        
+    
+    
+                marker_5a09d8bddc76c4d7c88c251e49b51d3e.setIcon(icon_e2d135cce4a79d2da6d9caec392fe673);
+            
+    
+            var marker_0a22517a3f705fe820a49f3ffbe0b9eb = L.marker(
+                [-8.1822, 113.6634],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_0673be49d1250c6b6dcfa82afb5cacca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ef2f27408439e6bab6f7074fdd7cf15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45fe64868bd8a414087f57321d558367 = $(`<div id="html_45fe64868bd8a414087f57321d558367" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: blue; margin-bottom: 10px;'>             🔧 Bengkel Motor Jaya         </h3>         <hr style='margin: 5px 0; border-color: blue;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Patrang</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Jasa</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     75/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_0ef2f27408439e6bab6f7074fdd7cf15.setContent(html_45fe64868bd8a414087f57321d558367);
+            
+        
+
+        marker_0a22517a3f705fe820a49f3ffbe0b9eb.bindPopup(popup_0ef2f27408439e6bab6f7074fdd7cf15)
+        ;
+
+        
+    
+    
+                marker_0a22517a3f705fe820a49f3ffbe0b9eb.setIcon(icon_0673be49d1250c6b6dcfa82afb5cacca);
+            
+    
+            var marker_ed55d68ae705f428d7652ba7a77ad500 = L.marker(
+                [-8.1725, 113.689],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_85911fcddb35c894eb223eb2422b5f6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aaec97c51c3f982e15a482ee17282d10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70699eddaa370bc70cbabbc637dfc17c = $(`<div id="html_70699eddaa370bc70cbabbc637dfc17c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: green; margin-bottom: 10px;'>             🎨 Kerajinan Batik Jember         </h3>         <hr style='margin: 5px 0; border-color: green;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Kaliwates</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Kerajinan</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     79/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_aaec97c51c3f982e15a482ee17282d10.setContent(html_70699eddaa370bc70cbabbc637dfc17c);
+            
+        
+
+        marker_ed55d68ae705f428d7652ba7a77ad500.bindPopup(popup_aaec97c51c3f982e15a482ee17282d10)
+        ;
+
+        
+    
+    
+                marker_ed55d68ae705f428d7652ba7a77ad500.setIcon(icon_85911fcddb35c894eb223eb2422b5f6a);
+            
+    
+            var marker_33a6019ead57d70818d4e7b10d3325a4 = L.marker(
+                [-8.3441, 113.6058],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_670f059031ace2bb04b351860d60cee5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f44b80a635d1ea047f41b54f688fbef5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_744947204ab11debc3c06ce69044fecb = $(`<div id="html_744947204ab11debc3c06ce69044fecb" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: orange; margin-bottom: 10px;'>             ☕ Kopi Sono         </h3>         <hr style='margin: 5px 0; border-color: orange;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Ambulu</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Minuman</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     85/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_f44b80a635d1ea047f41b54f688fbef5.setContent(html_744947204ab11debc3c06ce69044fecb);
+            
+        
+
+        marker_33a6019ead57d70818d4e7b10d3325a4.bindPopup(popup_f44b80a635d1ea047f41b54f688fbef5)
+        ;
+
+        
+    
+    
+                marker_33a6019ead57d70818d4e7b10d3325a4.setIcon(icon_670f059031ace2bb04b351860d60cee5);
+            
+    
+            var marker_ac9dae0e1a4bb7a997c30414715e1731 = L.marker(
+                [-8.1633, 113.4521],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_e301e1dce6344d994cb1c92cc78deea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_800b2b00ba843492674db8c6639dc764 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cc72a9acaef1c2b67207d6c9e5b49f4 = $(`<div id="html_7cc72a9acaef1c2b67207d6c9e5b49f4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: darkgreen; margin-bottom: 10px;'>             🏪 Toko Sembako Berkah         </h3>         <hr style='margin: 5px 0; border-color: darkgreen;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Tanggul</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Retail</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     78/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_800b2b00ba843492674db8c6639dc764.setContent(html_7cc72a9acaef1c2b67207d6c9e5b49f4);
+            
+        
+
+        marker_ac9dae0e1a4bb7a997c30414715e1731.bindPopup(popup_800b2b00ba843492674db8c6639dc764)
+        ;
+
+        
+    
+    
+                marker_ac9dae0e1a4bb7a997c30414715e1731.setIcon(icon_e301e1dce6344d994cb1c92cc78deea4);
+            
+    
+            var marker_4842721fd964d2bb73893c2265aab140 = L.marker(
+                [-8.1445, 113.6208],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_938aaedcbde7f7e35eca9db83536d04b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80cc97a2f63a836c5e90ed06d7f23d29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31715fdc91f7aa4ccd25dadff66b4309 = $(`<div id="html_31715fdc91f7aa4ccd25dadff66b4309" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: red; margin-bottom: 10px;'>             🍽️ Rumah Makan Pecel         </h3>         <hr style='margin: 5px 0; border-color: red;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Rambipuji</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Makanan</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     81/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_80cc97a2f63a836c5e90ed06d7f23d29.setContent(html_31715fdc91f7aa4ccd25dadff66b4309);
+            
+        
+
+        marker_4842721fd964d2bb73893c2265aab140.bindPopup(popup_80cc97a2f63a836c5e90ed06d7f23d29)
+        ;
+
+        
+    
+    
+                marker_4842721fd964d2bb73893c2265aab140.setIcon(icon_938aaedcbde7f7e35eca9db83536d04b);
+            
+    
+            var marker_377a8577775d5473f5ae921001591786 = L.marker(
+                [-8.2911, 113.9081],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_5924274f2fd8452493c7706d81145681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_447fdcf84f8df30990294f534a97968f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ad49fb7b330b042f28bcf5d2f95487e = $(`<div id="html_9ad49fb7b330b042f28bcf5d2f95487e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: blue; margin-bottom: 10px;'>             🔧 Penjahit Cantik         </h3>         <hr style='margin: 5px 0; border-color: blue;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Balung</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Jasa</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     72/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_447fdcf84f8df30990294f534a97968f.setContent(html_9ad49fb7b330b042f28bcf5d2f95487e);
+            
+        
+
+        marker_377a8577775d5473f5ae921001591786.bindPopup(popup_447fdcf84f8df30990294f534a97968f)
+        ;
+
+        
+    
+    
+                marker_377a8577775d5473f5ae921001591786.setIcon(icon_5924274f2fd8452493c7706d81145681);
+            
+    
+            var marker_e40cbe104e6631f9f5aebc42c704a503 = L.marker(
+                [-8.0378, 113.8844],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_3a06e93b7f5e78b9f50cfc2b450f1190 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75b5953b2e286e7d83dad8c9cae0d72e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82988a4f461bef06dbc6884bd1bb8be4 = $(`<div id="html_82988a4f461bef06dbc6884bd1bb8be4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: purple; margin-bottom: 10px;'>             🎂 Bakery Roti Manis         </h3>         <hr style='margin: 5px 0; border-color: purple;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Wuluhan</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Kue</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     84/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_75b5953b2e286e7d83dad8c9cae0d72e.setContent(html_82988a4f461bef06dbc6884bd1bb8be4);
+            
+        
+
+        marker_e40cbe104e6631f9f5aebc42c704a503.bindPopup(popup_75b5953b2e286e7d83dad8c9cae0d72e)
+        ;
+
+        
+    
+    
+                marker_e40cbe104e6631f9f5aebc42c704a503.setIcon(icon_3a06e93b7f5e78b9f50cfc2b450f1190);
+            
+    
+            var marker_fae5161b51dec98885b96435300e6848 = L.marker(
+                [-8.2847, 113.3679],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_96bcf30718e1dadd598bb075846e9491 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40087f7ba34c12db5fd3f90b1b20430d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c0d1b01c6278bf855e6f15f56022acc = $(`<div id="html_5c0d1b01c6278bf855e6f15f56022acc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: darkgreen; margin-bottom: 10px;'>             🏪 Toko Buah Segar         </h3>         <hr style='margin: 5px 0; border-color: darkgreen;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Kencong</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Retail</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     76/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_40087f7ba34c12db5fd3f90b1b20430d.setContent(html_5c0d1b01c6278bf855e6f15f56022acc);
+            
+        
+
+        marker_fae5161b51dec98885b96435300e6848.bindPopup(popup_40087f7ba34c12db5fd3f90b1b20430d)
+        ;
+
+        
+    
+    
+                marker_fae5161b51dec98885b96435300e6848.setIcon(icon_96bcf30718e1dadd598bb075846e9491);
+            
+    
+            var marker_5c92fa4a4258e4455f0dc0d830049fca = L.marker(
+                [-8.3686, 113.4747],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_ba6ce1bfaeb28ea6f4901d0d014fcca6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5038d6a3295bea5f7fe60a8a56e22e46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b177f1a0f00c27a6a225c49120befa53 = $(`<div id="html_b177f1a0f00c27a6a225c49120befa53" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: orange; margin-bottom: 10px;'>             ☕ Warung Kopi Tradisional         </h3>         <hr style='margin: 5px 0; border-color: orange;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Puger</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Minuman</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     80/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_5038d6a3295bea5f7fe60a8a56e22e46.setContent(html_b177f1a0f00c27a6a225c49120befa53);
+            
+        
+
+        marker_5c92fa4a4258e4455f0dc0d830049fca.bindPopup(popup_5038d6a3295bea5f7fe60a8a56e22e46)
+        ;
+
+        
+    
+    
+                marker_5c92fa4a4258e4455f0dc0d830049fca.setIcon(icon_ba6ce1bfaeb28ea6f4901d0d014fcca6);
+            
+    
+            var marker_988965eccdc5adfdc6c20d45803b148b = L.marker(
+                [-8.0858, 113.5558],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_fe1cadcbb219087670decd5f8060fac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71cb1cd022817d9875ddeab9c9cd5519 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b913b5ab2fa927d363a79553a0ec6a4b = $(`<div id="html_b913b5ab2fa927d363a79553a0ec6a4b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: green; margin-bottom: 10px;'>             🎨 Kerajinan Anyaman Bambu         </h3>         <hr style='margin: 5px 0; border-color: green;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Umbulsari</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Kerajinan</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     73/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_71cb1cd022817d9875ddeab9c9cd5519.setContent(html_b913b5ab2fa927d363a79553a0ec6a4b);
+            
+        
+
+        marker_988965eccdc5adfdc6c20d45803b148b.bindPopup(popup_71cb1cd022817d9875ddeab9c9cd5519)
+        ;
+
+        
+    
+    
+                marker_988965eccdc5adfdc6c20d45803b148b.setIcon(icon_fe1cadcbb219087670decd5f8060fac4);
+            
+    
+            var marker_e4f74008d8457361189b978f49ae731c = L.marker(
+                [-8.1545, 113.7301],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_d9e659dfe408bcb6df3e1687f8c7bdb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f65e124870c8f999cc27649f3907d7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62f0c95b985287c8ec8d14f39ed38a3d = $(`<div id="html_62f0c95b985287c8ec8d14f39ed38a3d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: blue; margin-bottom: 10px;'>             🔧 Laundry Express         </h3>         <hr style='margin: 5px 0; border-color: blue;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Sumbersari</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Jasa</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: orange; color: white; padding: 2px 8px; border-radius: 3px;'>                     77/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>✓ Good</td></tr>         </table>     </div>     </div>`)[0];
+                popup_2f65e124870c8f999cc27649f3907d7f.setContent(html_62f0c95b985287c8ec8d14f39ed38a3d);
+            
+        
+
+        marker_e4f74008d8457361189b978f49ae731c.bindPopup(popup_2f65e124870c8f999cc27649f3907d7f)
+        ;
+
+        
+    
+    
+                marker_e4f74008d8457361189b978f49ae731c.setIcon(icon_d9e659dfe408bcb6df3e1687f8c7bdb7);
+            
+    
+            var marker_018ee93adf908d43c1926143c6073437 = L.marker(
+                [-8.165, 113.7112],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_039e3037e45c2660efc942cffe8bee06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55f14287915c2096d2c765a54ae9e6e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_626b52f7ca8ba7616a4d780ec4fb6cab = $(`<div id="html_626b52f7ca8ba7616a4d780ec4fb6cab" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: red; margin-bottom: 10px;'>             🍽️ Catering Nusantara         </h3>         <hr style='margin: 5px 0; border-color: red;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Kaliwates</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Makanan</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     86/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_55f14287915c2096d2c765a54ae9e6e6.setContent(html_626b52f7ca8ba7616a4d780ec4fb6cab);
+            
+        
+
+        marker_018ee93adf908d43c1926143c6073437.bindPopup(popup_55f14287915c2096d2c765a54ae9e6e6)
+        ;
+
+        
+    
+    
+                marker_018ee93adf908d43c1926143c6073437.setIcon(icon_039e3037e45c2660efc942cffe8bee06);
+            
+    
+            var marker_22ee8b3f9a550f28e061e68c2b76410a = L.marker(
+                [-8.1086, 113.6625],
+                {
+}
+            ).addTo(marker_cluster_9af380146a0b7136d6e9767da275ef20);
+        
+    
+            var icon_64ef940193600407c0d87b874310503f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_446b93df9a6f7f26aeb70ac797aeb39b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f21f7186c04653c5256a82c5efe3ebb = $(`<div id="html_0f21f7186c04653c5256a82c5efe3ebb" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; min-width: 200px;'>         <h3 style='color: darkgreen; margin-bottom: 10px;'>             🏪 Toko Oleh-oleh Khas Jember         </h3>         <hr style='margin: 5px 0; border-color: darkgreen;'>         <table style='width:100%; font-size: 12px;'>             <tr><td><b>📍 Lokasi:</b></td><td>Jember</td></tr>             <tr><td><b>🗺️ Kecamatan:</b></td><td>Arjasa</td></tr>             <tr><td><b>🏷️ Jenis:</b></td><td>Retail</td></tr>             <tr><td><b>⭐ Skor:</b></td><td>                 <span style='background-color: green; color: white; padding: 2px 8px; border-radius: 3px;'>                     83/100                 </span>             </td></tr>             <tr><td><b>Status:</b></td><td>⭐ Excellent</td></tr>         </table>     </div>     </div>`)[0];
+                popup_446b93df9a6f7f26aeb70ac797aeb39b.setContent(html_0f21f7186c04653c5256a82c5efe3ebb);
+            
+        
+
+        marker_22ee8b3f9a550f28e061e68c2b76410a.bindPopup(popup_446b93df9a6f7f26aeb70ac797aeb39b)
+        ;
+
+        
+    
+    
+                marker_22ee8b3f9a550f28e061e68c2b76410a.setIcon(icon_64ef940193600407c0d87b874310503f);
+            
+    
+            marker_cluster_9af380146a0b7136d6e9767da275ef20.addTo(map_474778a99c507195728397e15305ec40);
+        
+    
+            var layer_control_a2e8d7ed6e96b52693cec60e6f50845d_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_2dfbefe89053b39ec64b33cd2b2f3cf6,
+                },
+                overlays :  {
+                    "UMKM Cluster" : marker_cluster_9af380146a0b7136d6e9767da275ef20,
+                },
+            };
+            let layer_control_a2e8d7ed6e96b52693cec60e6f50845d = L.control.layers(
+                layer_control_a2e8d7ed6e96b52693cec60e6f50845d_layers.base_layers,
+                layer_control_a2e8d7ed6e96b52693cec60e6f50845d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_474778a99c507195728397e15305ec40);
+
+        
+</script>
+</html>
