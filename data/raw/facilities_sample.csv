@@ -1,0 +1,16 @@
+id,nama,tipo,kecamatan,lat,lon,kapasitas
+1,SDN Kaliwates 01,sekolah,Kaliwates,-8.1692,113.7021,300
+2,SMPN 2 Jember,sekolah,Sumbersari,-8.1598,113.7199,600
+3,RSU dr. Soebandi,ruma_sakit,Kaliwates,-8.1705,113.6902,120
+4,Pasar Tanjung Pasar,perdagangan,Kaliwates,-8.1690,113.6980,200
+5,Stasiun Ketapang (lokal),transportasi,Patrang,-8.1801,113.6650,0
+6,Pusat Kuliner Jember,restoran,Rambipuji,-8.1450,113.6210,150
+7,Polsek Kaliwates,keamanan,Kaliwates,-8.1708,113.7030,50
+8,Pantai Papuma,pariwisata,Ambulu,-8.3415,113.6040,500
+9,Perpustakaan Daerah Jember,perpustakaan,Sumbersari,-8.1539,113.7295,80
+10,Puskesmas Jember Kota,kesehatan,Kaliwates,-8.1674,113.6954,40
+11,Terminal Pakusari,transportasi,Wuluhan,-8.0400,113.8870,0
+12,Pasar Sumbersari,perdagangan,Sumbersari,-8.1573,113.7256,180
+13,SMKN 1 Jember,sekolah,Kaliwates,-8.1715,113.6923,800
+14,Pos Polisi Umbulsari,keamanan,Umbulsari,-8.0870,113.5565,10
+15,Obyek Wisata Tancak,Punto_pariwisata,Balung,-8.2910,113.9045,400

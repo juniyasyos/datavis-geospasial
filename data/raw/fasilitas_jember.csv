@@ -1,0 +1,21 @@
+id,nama,kategori,kecamatan,lat,lon,kapasitas,rating,deskripsi
+1,SMAN 1 Jember,pendidikan,Kaliwates,-8.1650,113.6995,1200,4.5,Sekolah menengah favorit di pusat kota
+2,RSUD dr. Soebandi,kesehatan,Patrang,-8.1734,113.6801,450,4.2,Rumah sakit rujukan utama Jember
+3,Universitas Jember,pendidikan,Sumbersari,-8.1652,113.7220,35000,4.6,Kampus universitas negeri terbesar
+4,Pasar Tanjung,ekonomi,Kaliwates,-8.1689,113.6945,500,4.0,Pasar tradisional pusat kota
+5,Papuma Beach,wisata,Wuluhan,-8.2789,113.8689,1000,4.7,Pantai pasir putih dengan tebing karang
+6,Air Terjun Tancak,wisata,Panti,-8.2145,113.3789,300,4.4,Air terjun dengan kolam alami
+7,SMP Negeri 1 Jember,pendidikan,Kaliwates,-8.1705,113.7034,900,4.3,Sekolah menengah pertama favorit
+8,Puskesmas Balung,kesehatan,Balung,-8.2911,113.9081,150,3.9,Pusat kesehatan masyarakat
+9,Alun-alun Jember,ruang_publik,Kaliwates,-8.1672,113.6978,2000,4.1,Ruang terbuka publik pusat kota
+10,Kampung Inggris,pendidikan,Rambipuji,-8.1445,113.6208,500,4.5,Lembaga kursus bahasa Inggris
+11,Pasar Tanggul,ekonomi,Tanggul,-8.1633,113.4521,400,3.8,Pasar tradisional wilayah barat
+12,Pantai Payangan,wisata,Ambulu,-8.3856,113.6234,800,4.3,Pantai dengan pemandangan sunset
+13,RS Citra Husada,kesehatan,Sumbersari,-8.1589,113.7156,250,4.1,Rumah sakit swasta modern
+14,Perkebunan Kopi,ekonomi,Silo,-8.0789,113.5445,200,4.2,Agrowisata perkebunan kopi
+15,Taman Botani,wisata,Patrang,-8.1822,113.6634,600,4.0,Taman dengan koleksi flora langka
+16,Stadion Jember,ruang_publik,Kaliwates,-8.1545,113.7089,15000,4.2,Stadion sepak bola kabupaten
+17,SMKN 1 Jember,pendidikan,Sumbersari,-8.1593,113.7213,1500,4.4,Sekolah kejuruan teknik
+18,Pasar Kencong,ekonomi,Kencong,-8.2847,113.3679,350,3.7,Pasar tradisional wilayah selatan
+19,Waduk Sempor,wisata,Sukorambi,-8.1234,113.6789,500,4.1,Waduk untuk pemancingan
+20,Terminal Tawang Alun,transportasi,Kaliwates,-8.1756,113.6912,3000,3.6,Terminal bus antar kota

@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+plotly
+geopandas
+folium
+jupyter
+
+# Optional (recommended if doing reprojections / basemap)
+# shapely
+# pyproj
+# contextily
